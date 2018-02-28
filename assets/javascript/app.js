@@ -3,6 +3,7 @@ $(document).ready(function() {
 	var correct = 0;
 	var incorrect = 0;
 	var time = 30;
+	
 
 
 
@@ -10,6 +11,8 @@ $(document).ready(function() {
 		$("#timer").text(time);
 		$("#correct").text(correct);
 		$("#incorrect").text(incorrect);
+
+		
 	};
 
 	var reset = function() {
@@ -17,7 +20,7 @@ $(document).ready(function() {
 		incorrect = 0;
 		time = 30;
 		display();
-
+		$("#timer").css("color","white");
 		
 	};
 
@@ -54,6 +57,10 @@ var x = setInterval(function(){
 	if (time === 0) {
 		
 		checkAnswer();
+	};
+
+	if (time <= 10){
+		$("#timer").css("color","red");
 	};
 },1000)
 
