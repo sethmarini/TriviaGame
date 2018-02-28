@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">
+	<meta name="description" content="Psychic Game">
+	<meta name="author" content="Bobby Fresh">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!-- 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+	
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Audiowide|Economica|Kalam" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Audiowide|Economica|Kalam|Ubuntu" rel="stylesheet">
+	
+	<title>Totally Trivial Trivia</title>
+
+</head>
+<body>
+	<header>	
+		<h1>Totally Trivial Trivia</h1>
+	</header>
+	
+
+	<div class="container">
+		
+		
+		<h4>Instructions: You have 30-seconds to answer five questions.</h4>
+		<div class="row">
+				<div id="stopWatch"	class="col-sm-4">
+					<h5>Time Remaining: <span id="timer">30</span></h5>
+				</div>
+				<div class="col-sm-4">
+					<h5>Correct Answers: <span id="correct">0</span></h5>
+				</div>.
+				<div class="col-sm-3">
+					<h5>Incorrect Answers: <span id="incorrect">0</span></h5>
+				</div>		
+		</div>
+		
+	
+		<div class="jumbotron">
+		
+				<p id="questionOne">1. Which theory is known as the Einstein theory?</p>
+						<button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+
+
+
+					<input type="radio" name="q1" value=false> Evolution Theory
+
+					<input type="radio" name="q1" value=false> Big Bang Theory 
+
+					<input type="radio" name="q1" value=true> Theory of Relativity*
+
+					<input type="radio" name="q1" value=false> Cell Theory
+			<br><br><br>
+				<p id="questionTwo">2. What is the capital of the United Kingdom?</p>
+
+					<input type="radio" name="q2" value=false> Spain
+
+					<input type="radio" name="q2" value=true> London*
+
+					<input type="radio" name="q2" value=false> New York
+
+					<input type="radio" name="q2" value=false> Dubai
+			<br><br><br>
+				<p id="questionThree">3. If you are born on Valentines Day, what is your astrological sign?</p>
+
+					<input type="radio" name="q3" value=false> Pisces
+
+					<input type="radio" name="q3" value=false> Sagittarius
+
+					<input type="radio" name="q3" value=false> Aries
+
+					<input type="radio" name="q3" value=true> Aquarius*
+			<br><br><br>
+				<p id="questionFour">4. Which is the only body cell with no nucleus?</p>
+
+					<input type="radio" name="q4" value=false> Microglial Cell
+
+					<input type="radio" name="q4" value=true> Red Blood Cell*
+
+					<input type="radio" name="q4" value=false> White Blood Cell
+
+					<input type="radio" name="q4" value=false> Dendritic Cell
+			<br><br><br>
+				<p id="questionFive">5. What year did the first moon landing occur?</p>
+
+					<input type="radio" name="q5" value=false> 1966
+
+					<input type="radio" name="q5" value=false> 1967
+
+					<input type="radio" name="q5" value=false> 1968
+
+					<input type="radio" name="q5" value=true> 1969*
+				<br><br><br>
+				<button id="btn" type="button" class="btn btn-primary">
+					Submit
+				</button>
+				<button id="btn2" type="button" class="btn btn-outline-primary">
+					Reset
+				</button>
+				
+		</div> 
+
+	</div>
+
+
+</body>
+</html>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+<script src="assets/javascript/app.js"></script>
+
+
+<footer>
+	
+</footer>
+</body>
+</html>
